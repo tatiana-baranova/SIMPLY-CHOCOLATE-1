@@ -4,19 +4,23 @@
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  /* background-color
-  color
-  margin: 0; */
-}
-
-.root {
+:root {
   --black: #111;
   --orange: #fd9222;
   --violet: #1e1823;
   --white: #fff;
 }
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+
+body {
+  /* background-color
+  color */
+  margin: 0 auto;
+}
+
 
 ul {
   list-style-type: none;
@@ -73,14 +77,15 @@ button {
   /* padding: 0 32px; */
   width: 1136px;
   /* margin: 0 auto; */
-  height: 20px;
+  /* height: 20px; */
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   flex-direction: row;
   padding-bottom: 28px;
   padding-top: 28px;
   gap: 447px;
+  /* margin-right: 447px; */
 }
 
 .top-lodo {
@@ -110,33 +115,44 @@ button {
   letter-spacing: -0.02em;
   color: #111;
 }
+
 .section-hero {
   border-radius: 30px;
-  width: 1200px;
+  /* max-width: 1200px; */
   height: 600px;
   background-color: #1e1823;
 }
+
 .hero-container {
   width: 1056px;
-  padding: 40px 72px;
+  padding: 381px 72px 40px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
   gap: 32px;
 }
+
 .title-hero {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-family);
   font-weight: 500;
   font-size: 28px;
-  line-height: 1.22;
+  line-height: 121%;
   letter-spacing: -0.03em;
-  color: #fff;
+  color: var(--white);
   width: 484px;
   height: 102px;
 }
 
 .button-hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 500px;
+}
+
+.btn-hero {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -157,6 +173,7 @@ button {
   align-items: center;
   justify-content: center;
 }
+
 .button-made {
   border: 1px solid #fff;
   border-radius: 100px;
@@ -171,41 +188,47 @@ button {
   align-items: center;
   justify-content: center;
 }
+
 .text-hero {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.03em;
   color: #fff;
+  margin-top: 13.5px;
+
+
 }
 
 .section-info {
   padding-top: 72px;
   padding-bottom: 100px;
-  width: 1200px;
+  /* width: 1200px; */
 }
 
 .info-container {
   background-color: #1e1823;
+
 }
+
 .list-info {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: row;
   gap: 70px;
-  flex-basis: calc((100% - 2 * 70px) / 3);
   padding: 50px;
-  /* width: calc((100% - 2 * 70px) / 3); */
+  margin: 0 auto;
+  width: 1100px;
 }
 
 .item-text {
-  /* display: flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
-  flex-direction: row;
-  gap: 70px; */
-  /* flex-basis: calc((100% - 2 * 70px) / 3); */
+  width: 308px;
+  height: 160px;
 }
 
 .title-info {
@@ -214,10 +237,11 @@ button {
   font-size: 18px;
   color: #fff;
   margin-bottom: 18px;
+
 }
 
 .text-info {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -225,23 +249,28 @@ button {
 }
 
 .section-ingredients {
+  margin-bottom: 100px;
 }
+
 .container-ingredients {
   width: 1200px;
   height: 476px;
 }
+
 .info-ingredients {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
-  gap: 28px;
-  margin-bottom: 50px;
+  flex-direction: column; */
+  text-align: center;
   width: 486px;
   height: 156px;
   margin: 0 auto;
 }
+
 .title-ingredients {
+  width: 441px;
+  height: 56px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 24px;
@@ -250,7 +279,9 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin: 0 auto;
 }
+
 .text-span {
   color: #fd9222;
 }
@@ -258,13 +289,19 @@ button {
 .text-ingredients {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 129%;
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  margin-top: 28px;
+  width: 468px;
+  height: 72px;
 }
+
 .card-ingredients {
+  margin-top: 50px;
 }
+
 .list-card-ingredients {
   display: flex;
   align-items: flex-start;
@@ -273,21 +310,20 @@ button {
   gap: 19px;
 }
 
+.card-content {
+
+  display: flex;
+}
+
 .card {
   margin-bottom: 36px;
 }
 
 .chocolate-milk-content {
-  border-radius: 15px;
-  width: 270px;
-  height: 270px;
   background: #fd9222;
 }
 
 .nuts-content {
-  border-radius: 15px;
-  width: 270px;
-  height: 270px;
   background-color: #1e1823;
 }
 
@@ -299,6 +335,7 @@ button {
   text-transform: uppercase;
   color: #111;
 }
+
 .title-card-one {
   font-weight: 600;
   font-size: 14px;
@@ -309,23 +346,29 @@ button {
 }
 
 .milk-content {
+  padding: 28px 32px 82px 32px;
   border: 1px solid #fd9222;
   border-radius: 15px;
   width: 270px;
   height: 270px;
 }
 
-.section-made {
-  width: 1200px;
-  height: 478px;
+.picture {
+  margin-bottom: 36px;
 }
+
+.section-made {
+  margin-bottom: 100px;
+}
+
 .made-container {
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: flex-start;
-  flex-direction: column;
-  gap: 50px;
+  flex-direction: column; */
+
 }
+
 .title-made {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -335,11 +378,13 @@ button {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  margin-bottom: 50px;
 }
 
 .span-made {
   color: #fd9222;
 }
+
 .list-made {
   display: flex;
   align-items: flex-start;
@@ -347,6 +392,7 @@ button {
   flex-direction: row;
   gap: 20px;
 }
+
 .title-list-made {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
@@ -354,6 +400,7 @@ button {
   line-height: 1.33;
   color: #111;
 }
+
 .text-item {
   display: flex;
   align-items: flex-start;
@@ -375,8 +422,7 @@ button {
   gap: 28px;
 }
 
-.item-list {
-}
+.item-list {}
 
 .text-list-made {
   font-family: 'Montserrat', sans-serif;
@@ -387,31 +433,41 @@ button {
   color: #111;
 }
 
-.section-review {
-}
+.section-review {}
 
-.review-container {
-}
+.review-container {}
 
-.title-review {
-  font-family: 'Montserrat', sans-serif;
+.title-reviews {
+  font-family: var(--font-family);
   font-weight: 600;
   font-size: 24px;
-  line-height: 1.17;
+  line-height: 117%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   text-align: center;
-
-  color: #111;
+  color: var(--black);
 }
 
 .title-chocolate {
   color: #fd9222;
 }
+
 .list-section-review {
+  margin-top: 91px;
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  margin-bottom: 50px;
 }
 
 .list-review {
+  position: relative;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  width: 360px;
+  height: 200px;
+  box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
+  background: var(--white);
 }
 
 .name-review {
@@ -421,6 +477,9 @@ button {
   line-height: 1.33;
   text-align: center;
   color: #111;
+  margin-top: 18px;
+  margin-bottom: 24px;
+  margin-top: 56px;
 }
 
 .text-review {
@@ -429,32 +488,63 @@ button {
   font-size: 14px;
   line-height: 1.28571;
   letter-spacing: -0.02em;
-  text-align: center;
   color: rgba(17, 17, 17, 0.7);
+  width: 312px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.card-info-rev {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  /* width: 50%;
+  height: 100%; */
+}
+
+.card-review {
+  border-radius: 100%;
+  margin: 0 auto 12px;
 }
 
 .button-review {
+  border: 1px solid var(--orange);
+  border-radius: 100px;
+  padding: 14px 40px;
+  width: 222px;
+  height: 50px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--black);
+  margin: 0 489px;
 }
 
-.footer {
-}
-.title-footer {
-}
-.footer-subtitle {
-}
-.footer-address {
-}
-.address-list {
-}
-.footer-address-item {
-}
-.footer-address-link {
-}
-.footer-navigetion {
-}
-.footer-link {
-}
-.footer-menu {
-}
-.menu-link {
-}
+.footer {}
+
+.title-footer {}
+
+.footer-subtitle {}
+
+.footer-address {}
+
+.address-list {}
+
+.footer-address-item {}
+
+.footer-address-link {}
+
+.footer-navigetion {}
+
+.footer-link {}
+
+.footer-menu {}
+
+.menu-link {}
