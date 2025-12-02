@@ -11,10 +11,9 @@
   --orange: #fd9222;
   --violet: #1e1823;
   --white: #fff;
-}
-
-:root {
+  width: 1200px;
   --font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
 }
 
 body {
@@ -71,7 +70,7 @@ button {
 /* .page-header {
 } */
 .container {
-  max-width: 1200px;
+  width: 1136px;
   padding: 0 32px;
   margin: 0 auto;
 }
@@ -91,7 +90,7 @@ button {
   /* margin-right: 447px; */
 }
 
-.top-lodo {
+.top-logo {
   font-family: 'Montserrat', sans-serif;
   font-style: italic;
   font-weight: 700;
@@ -100,6 +99,10 @@ button {
   letter-spacing: -0.03em;
   color: #111;
   /* margin-right: 631px; */
+}
+
+.icon-logo {
+  color: var(--orange);
 }
 
 /* .logo-header {
@@ -303,6 +306,7 @@ button {
 
 .card-ingredients {
   margin-top: 50px;
+  width: 1136px;
 }
 
 .list-card-ingredients {
@@ -310,7 +314,7 @@ button {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: row;
-  gap: 19px;
+  gap: 32px;
 }
 
 .card-content {
@@ -323,11 +327,17 @@ button {
 }
 
 .chocolate-milk-content {
+  border-radius: 15px;
+  width: 260px;
+  height: 270px;
   background: #fd9222;
 }
 
 .nuts-content {
   background-color: #1e1823;
+  border-radius: 15px;
+  width: 260px;
+  height: 270px;
 }
 
 .title-card {
@@ -352,7 +362,7 @@ button {
   padding: 28px 32px 82px 32px;
   border: 1px solid #fd9222;
   border-radius: 15px;
-  width: 270px;
+  width: 260px;
   height: 270px;
 }
 
