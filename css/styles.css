@@ -76,18 +76,15 @@ button {
 }
 
 .header-container {
-  /* padding: 0 32px; */
   width: 1136px;
-  /* margin: 0 auto; */
-  /* height: 20px; */
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-direction: row;
-  padding-bottom: 28px;
-  padding-top: 28px;
-  gap: 447px;
-  /* margin-right: 447px; */
+  padding: 24px 32px;
+  gap: 365px;
+  height: 80px;
+
 }
 
 .top-logo {
@@ -95,10 +92,9 @@ button {
   font-style: italic;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.11;
+  line-height: 111%;
   letter-spacing: -0.03em;
-  color: #111;
-  /* margin-right: 631px; */
+  color: var(--black);
 }
 
 .icon-logo {
@@ -111,6 +107,33 @@ button {
   display: flex;
   align-items: center;
   gap: 24px;
+  width: 320px;
+  height: 16px;
+}
+
+.social-list-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.social-svg {
+  color: #111;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
 }
 
 .menu-link {
